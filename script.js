@@ -79,20 +79,6 @@ function handleHeaderScroll() {
     });
 }
 
-// Purchase redirect function
-function redirectToPurchase() {
-    // In a real implementation, this would redirect to a payment processor
-    // For demo purposes, we'll show an alert
-    alert('Redirecionando para o checkout seguro...\n\nEm um site real, isso levaria você para uma página de pagamento segura (como Stripe, PayPal, PagSeguro, etc.)');
-    
-    // Example of what the real implementation might look like:
-    // window.location.href = 'https://checkout.stripe.com/pay/...';
-    // or
-    // window.location.href = 'https://www.paypal.com/checkout/...';
-    // or
-    // window.location.href = 'checkout.html';
-}
-
 // Intersection Observer for animations
 function setupScrollAnimations() {
     const observerOptions = {
@@ -208,7 +194,7 @@ if ('loading' in HTMLImageElement.prototype) {
     // Fallback for older browsers
     const script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-    document.body.appendChild(script);
+    document.body.appendChild(script );
 }
 
 // Performance monitoring
