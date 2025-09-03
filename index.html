@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript">
+        function importHotmart( ){
+            var imported = document.createElement("script");
+            imported.src = "https://static.hotmart.com/checkout/widget.min.js";
+            document.head.appendChild(imported );
+            var link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
+            document.head.appendChild(link );
+        }
+        importHotmart();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -50,10 +63,10 @@
                         <div class="price-new">Por apenas R$ 9,90</div>
                         <div class="discount">Economia de R$ 89,10!</div>
                     </div>
-                    <button class="cta-button" onclick="scrollToSection('comprar')">
+                    <a onclick="return false;" href="https://pay.hotmart.com/Q101234657V?checkoutMode=2" class="hotmart-fb hotmart__button-checkout cta-button">
                         <i class="fas fa-shopping-cart"></i>
                         QUERO TRANSFORMAR MEU CORPO AGORA
-                    </button>
+                    </a>
                     <div class="guarantee-badge">
                         <i class="fas fa-shield-alt"></i>
                         <span>Garantia de 30 dias ou seu dinheiro de volta</span>
@@ -69,7 +82,7 @@
     <!-- Problem Section -->
     <section class="problem">
         <div class="container">
-            <h2>Você Está Cansado(a) de...</h2>
+            <h2>Você Está Cansado(a ) de...</h2>
             <div class="problems-grid">
                 <div class="problem-item">
                     <i class="fas fa-times-circle"></i>
@@ -146,7 +159,7 @@
         </div>
     </section>
 
-    <!-- What You'll Get Section -->
+    <!-- What You\'ll Get Section -->
     <section class="what-you-get">
         <div class="container">
             <h2>O Que Você Vai Descobrir Neste Ebook</h2>
@@ -328,31 +341,26 @@
                         <div class="savings">Você economiza R$ 89,10!</div>
                     </div>
                     
-                    <button class="final-cta-button" onclick="redirectToPurchase()">
+                    <a onclick="return false;" href="https://pay.hotmart.com/Q101234657V?checkoutMode=2" class="hotmart-fb hotmart__button-checkout final-cta-button">
                         <i class="fas fa-credit-card"></i>
                         COMPRAR AGORA POR R$ 9,90
-                    </button>
+                    </a>
                     
                     <div class="payment-methods">
                         <i class="fab fa-cc-visa"></i>
                         <i class="fab fa-cc-mastercard"></i>
                         <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-amex"></i>
                         <i class="fas fa-barcode"></i>
                     </div>
                     
-                    <div class="security-badges">
-                        <div class="badge">
-                            <i class="fas fa-lock"></i>
-                            <span>Compra 100% Segura</span>
-                        </div>
-                        <div class="badge">
-                            <i class="fas fa-download"></i>
-                            <span>Acesso Imediato</span>
-                        </div>
-                        <div class="badge">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Garantia 30 Dias</span>
-                        </div>
+                    <div class="security-info">
+                        <i class="fas fa-lock"></i>
+                        <span>Compra 100% Segura</span>
+                        <i class="fas fa-bolt"></i>
+                        <span>Acesso Imediato</span>
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Garantia 30 Dias</span>
                     </div>
                 </div>
             </div>
@@ -362,29 +370,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3><i class="fas fa-leaf"></i> VidaSaudável</h3>
-                    <p>Transformando vidas através da alimentação saudável</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Links Úteis</h4>
-                    <ul>
-                        <li><a href="#beneficios">Benefícios</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                        <li><a href="#garantia">Garantia</a></li>
-                        <li><a href="#comprar">Comprar</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <p><i class="fas fa-envelope"></i> contato@vidasaudavel.com</p>
-                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 VidaSaudável. Todos os direitos reservados.</p>
-            </div>
+            <p>&copy; 2025 VidaSaudável. Todos os direitos reservados.</p>
+            <p>Este produto não substitui o parecer profissional. Sempre consulte um profissional da saúde para tratar de assuntos relativos à saúde.</p>
         </div>
     </footer>
 
